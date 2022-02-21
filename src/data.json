@@ -1,0 +1,19 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "Name": "Marvel",
+        "Url": "https",
+        "Thumbnail":"jpg",
+        "Series":""
+      },
+
+      {
+        "id": 2,
+        "Name": "Captain America",
+        "Url": "https://www.imdb.com/title/tt0458339/",
+        "Thumbnail":"captain america.jpg",
+        "Series":""
+      }
+    ]
+}
