@@ -14,7 +14,7 @@ class App extends Component {
   
   onClick=(value)=>{
     try{
-      fetch(`https://my-json-server.typicode.com/saware94/json/movies?Name_like=${value}`,)
+      fetch(`http://localhost:3000/movies?Name_like=${value}`,)
       .then((response)=>response.json())
       .then((data)=>{this.setState({list:data})})
     }
@@ -26,32 +26,34 @@ class App extends Component {
 }
   render() {
     return (
-      <div className='wrapper'>
+      <div className='wrapper' >
+        
 
         <p>
           <input className='search' type="text" onChange={(e)=>this.onClick(e.target.value)} placeholder='Search'></input>
         </p><br />
-        <div className='table'>
+        <div>
           <TableContainer className="hello">
-            <Table>
+            <Table >
               <TableHead>
-                <TableRow className="hello">
-                  <TableCell>Name</TableCell>
-                  <TableCell>URL</TableCell>
-                  <TableCell> ThumbNail</TableCell>
+                <TableRow className="hel2">
+                  <TableCell >Name</TableCell>
+                  <TableCell >URL</TableCell>
+                  <TableCell > ThumbNail</TableCell>
                   <TableCell> Series</TableCell>
                   </TableRow>
                   </TableHead>
-                  <TableBody className="hello">
+                  <TableBody>
                   {this.state.list.map((b)=>(              
-                      <TableRow className="hello">
+                      <TableRow>
                         <TableCell>{b.Name}</TableCell>
                         <TableCell>{b.Url}</TableCell>
-                        <TableCell><img src={b.Thumbnail} alt="Girl in a jacket" width="200" height="250"/></TableCell>
+                        <TableCell><img src={b.Thumbnail} alt="eternals" width="200" height="200"/></TableCell>
                         <TableCell>{b.Series}</TableCell>
                         </TableRow>
                   ))}
                   </TableBody>
+                  
             </Table>
           </TableContainer>
         </div>

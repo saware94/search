@@ -2,10 +2,10 @@
     "movies": [
       {
         "id": 1,
-        "Name": "Marvel",
-        "Url": "https",
-        "Thumbnail":"jpg",
-        "Series":""
+        "Name": "Eternals",
+        "Url": "https://www.imdb.com/title/tt0124539/",
+        "Thumbnail":"eternals.jpg",
+        "Series":"Season 1-15"
       },
 
       {
@@ -13,7 +13,7 @@
         "Name": "Captain America",
         "Url": "https://www.imdb.com/title/tt0458339/",
         "Thumbnail":"captain america.jpg",
-        "Series":""
+        "Series":"Season 1-5"
       }
     ]
 }

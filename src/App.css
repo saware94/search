@@ -1,7 +1,10 @@
 .wrapper {
   position: relative;
   display: flex;
-  min-width: 100px;
+    background-color:cornflowerblue;
+   width: auto;
+   height: 1000px;
+
 }
 
 .search {
@@ -17,32 +20,20 @@
   font-weight: bold;
 }
 
-.search-icon {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  width: 14px;
-}
+.hello{
+  width:200px;
+  height: 250px;
+  background-color: aqua;
+  margin-top: 250px;
+  align-items: center;
 
-.clear-icon {
-  position: absolute;
-  top: 9px;
-  right: 8px;
-  width: 12px;
-  cursor: pointer;
-  visibility: hidden;
 }
-
-.search:hover, .search:focus {
-  border: 1px solid #009688;
-  background-color: white;
+.hel2{
+  width: auto;
+  height: 25px;
+  background-color: cornflowerblue;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  
 }
-.table{
-  position:relative;
-  margin-top: 200px;
-  margin-left: 200px;
-  }
-  .hello{
-    border:3px solid black;
-
-  }
